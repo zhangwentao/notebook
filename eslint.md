@@ -44,3 +44,14 @@ npm install eslint
     - ```package.json```文件中的```eslintConfig```字段
     - 作用范围: 作用于配置文件所在目录及其所有子目录
     - 注意：如果在运行```eslint```的目录中不存在配置文件，eslint会尝试在home目录（```~/```）,寻找eslint 的配置文件。
++ 配置项目
+    - env 代码预计要运行的环境,不同的运行环境会预定义不同的全局变量
+    - globals 其他需要自定义的全局变量
+    - rules 规则
+    - parserOptions 指定需要支持的 ecmascript的版本,默认是es5.注意这只是设置支持相应ecma语言的语法，并不会自动设置不同语言版本中的全局变量,语言内的全局变量需要在env中设置,包含如下子项
+        * ecmaVersion: 5,6,7 ...
+        * sourceType: 'script' 'module'
+        * ecmaFeatures: 
+            + globalReturn
+            + impliedStrict
+            + jsx
