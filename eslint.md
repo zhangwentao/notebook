@@ -42,5 +42,10 @@ npm install eslint --global
 eslint filepath.js
 ```
 ##### 编辑器插件
-+ for [vscode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-##### api
+
+简单来说如果你使用vscode编写js代码，将ESLint配合下面的插件使用，那么你会感觉自己真正的拥有了一个写js代码的IDE，它可以做到在你编写代码的同时，对你的代码进行静态分析，发现你代码中的错误，并**友好**的进行提示，甚至可以自动修复ESLint指定为可以自动修复的错误。在代码运行之前发现并修复错误，这可以大大提高你的开发效率。绝对是一个开发利器。
+> ESLint Plugin for [vscode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+## 结语
+这里仅对ESLint进行了一个粗略的介绍和本人亲身的使用感受，因为官方文档对ESLint的概念使用进行了非常完善的描述，所以就不在赘述。
+> [官方文档](https://eslint.org/) 
