@@ -10,6 +10,17 @@
         - 将程序开发者从 “对dom的操作中” 解放出来。对dom操作一般情况下都由vue自动操作.如果不使用vue这样的框架，通常开发人员会通过dom API或jQuery对dom进行的操作。
 + 组件
     + 组件是实质上就是拥有若干预制选项的Vue实例
+    + 组件定义
+        - 全局定义
+            ```javascript
+            Vue.component('custom-component-name',{
+                //optionsObject
+            });
+            ```
+        - props - 属性定义
+        - $.emit - 触发自定义事件
+        - slot - 插槽
+    + 组件复用
 + Vue实例
     + ```javascript
         var vm = new Vue(OptionsObject);
@@ -78,6 +89,7 @@
             <div v-on:click="handleClicked"></div>
             <div @click="handleClicked"></div>
             ```
+
          
     
 
