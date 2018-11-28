@@ -64,6 +64,7 @@
               <div v-on:click.prevent="handleClicked"></div>
               ```
         - 简写
+
             | 指令名 | 简写|
             |-------|----|
             |v-bind | :  |
