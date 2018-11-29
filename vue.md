@@ -39,7 +39,7 @@
 + 模板语法 
     + [插值](https://vuejs.org/v2/guide/syntax.html#Text)
         - **插值** 可以使用 **js表达式** 
-        - 表达式中可以使用白名单中的一些全局变量，如 Math，Data._(注：这是使用 new Function方式实现，在执行时，将Math、Date等白名单内的对象作为参数传入)_
+        - 表达式中可以使用白名单中的一些全局变量，如 Math，Data._(注：这是使用 new Function方式实现，在执行时，将Math、Date等白名单内的对象作为参数传入)_
         - 插值的类型
             + html 标签内容-文本  
               ```html
@@ -57,16 +57,16 @@
               ```html
               <div :attributename="fieldInData"></div>
               ```
-    + [指令](https://vuejs.org/v2/guide/syntax.html#Directives)
+    + [指令](https://vuejs.org/v2/guide/syntax.html#Directives)
         - vue的指令是一类由```v-```为前缀的html标签属性
-            + **与html属性类似，它之后可以跟随一个使用等号连接的值,也可以没有而是只有一个属性名**
+            + **与html属性类似，它之后可以跟随一个使用等号连接的值,也可以没有而是只有一个属性名**
         - 指令参数
             + 某些指令可以跟随一个参数，使用```:```与作为前缀，如：
                 ```html
                 <div v-bind:id="filedInData"></div>
                 <div v-on:click="handleClicked"></div>
                 ```
-                | 指令名|指令参数 |等号|引号|    值      |引号|
+                | 指令名|指令参数 |等号|引号|    值      |引号|
                 |------|:------:|:-:|---:|-----------|:--|        
                 |v-bind| :id    | = |   "|filedInData|"  |
         - 指令修饰符
@@ -74,7 +74,7 @@
               ```html
               <div v-on:click.prevent="handleClicked"></div>
               ```
-        - 简写
+        - 简写
 
             | 指令名 | 简写|
             |-------|----|
