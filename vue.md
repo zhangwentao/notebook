@@ -39,7 +39,7 @@
 + 模板语法 
     + [插值](https://vuejs.org/v2/guide/syntax.html#Text)
         - **插值** 可以使用 **js表达式** 注意：**必须是单个表达式**
-        - 表达式中可以使用白名单中的一些全局变量，如 Math，Data._(注：这是使用 new Function方式实现，在执行时，将Math、Date等白名单内的对象作为参数传入)_
+        - 表达式中可以使用白名单中的一些全局变量，如 Math，Date._(注：这是使用 new Function方式实现,然后使用eval函数执行，在执行时，将Math、Date等白名单内的对象作为参数传入)_
         - 插值的类型
             + html 标签内容-文本  
               ```html
