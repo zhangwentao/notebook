@@ -1,7 +1,7 @@
 about version control
 =====================
 
-version control is a system that records changes to a file(any type of file) or a set of filesover time so that you can recall specific versions later.
+version control is a system that records changes to a file(any type of file) or a set of files over time so that you can recall specific versions later.
 
 ## types
 
@@ -28,3 +28,22 @@ version control is a system that records changes to a file(any type of file) or 
 + clients fully mirror the repository,including full history.Thus if any server dies,and these systems were collaborating via that server, any of the client repositories can be copied back up the server to restore it.Every clone is really a full backup of all the data.
 
 + many of these systems deal pretty well with having several remote repositories they can work with,so you can collaborate with different groups of people in different ways simultaneoursly within the same project.
+
+a short history of Git
+======================
+between 1991-2002 ,team members of Linux kernal,changes to the software were passed around as patches and archived files.
+2002, the linux project begin to use a DVCSs called BitKeeper.
+2005, BitKeeper was not free-of-charge.this prompted the community to develop their own DVCSs tools.
+
+git basics
+==========
+
+## snapshots, not differences
+### other VCSs store changes of files when committed. It is like a list of changes.
+### Git store snapshot of files  when committed. It is like a list of snapshots.
+#### if file have no change, Git don't store it again,only store a reference of it.
+
+## Nearly every Operation is Local
+### you have entire history of the project on local disk.so nearly every operation is instantaneous.
+
+ 
