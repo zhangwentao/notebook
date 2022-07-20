@@ -63,6 +63,13 @@ this calls return a Object ,called ``` React Element ```,it like this
 
 so, we can use jsx like other js expressions. because jsx is just js expression.
 
+## React Element
+1. React Elements are  plain JavaScript Object, more cheap to create than Browser DOM Element.
+2. React Elements are smallest building block of React App.
+3. React Elements are immutable. Component's render() function or functional Components produce React Elements, also include JavaScript function. They are "factory" to produce React Elements.
+
+## Hooks
+
 ## Add _React_ to a HTML page
 
 ### two js file
