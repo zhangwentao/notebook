@@ -75,3 +75,8 @@ so, we can use jsx like other js expressions. because jsx is just js expression.
 ### two js file
 + react 
 + react-dom
+
+### some understanding
+
+React.createElement() 如其参数，关注：生成‘什么组件’，及要生成的’组件‘的’输入参数‘是什么。这个函数的主要参数就是组件名称，组件的props，此外还有这个组件的childrens（子组件数组）。
+React.createElement() 函数一般情况是又babel编译器将JSX语法的代码转译生成的。其返回值是ReactElement对象，就是普通的js对象。经过层层调用的React.createElement()函数的掉用，最终生成的ReactElement是一个树状结构，父组件->子组件们->孙组件们。这个树最终会作为参数给ReactDom.render()函数，这个函数会根据传入的组件树状结构定义生成浏览器中的DOM树。当组件状态改变时，也会自动更新DOM树。
