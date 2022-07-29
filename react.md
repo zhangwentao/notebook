@@ -76,7 +76,12 @@ so, we can use jsx like other js expressions. because jsx is just js expression.
 + react 
 + react-dom
 
-### some understanding
-
+# some understanding
+## 逻辑 
 React.createElement() 如其参数，关注：生成‘什么组件’，及要生成的’组件‘的’输入参数‘是什么。这个函数的主要参数就是组件名称，组件的props，此外还有这个组件的childrens（子组件数组）。
+
 React.createElement() 函数一般情况是又babel编译器将JSX语法的代码转译生成的。其返回值是ReactElement对象，就是普通的js对象。经过层层调用的React.createElement()函数的掉用，最终生成的ReactElement是一个树状结构，父组件->子组件们->孙组件们。这个树最终会作为参数给ReactDom.render()函数，这个函数会根据传入的组件树状结构定义生成浏览器中的DOM树。当组件状态改变时，也会自动更新DOM树。
+## 什么是组件
+刚接触React时，直觉上会认为一个React组件经过React渲染后，最终肯定会对应到页面中的某个显示出来的视觉元素。比如定义一个Button组件,用于定义一个按钮组件，当把这个Button在某个页面实例化之后，在页面中就可以看到这个按钮。
+
+当我们在使用Redux 或 ReactRouter 时，就会发现这些库中，的 Router、Route 、Provider等组件，并不会在页面中有视觉呈现。可能就会感到比较迷惑，这些怎么也是组件。之后我们会发现，在使用这些组件时，往往都是把我们的组件作为这些组件的children。其实这些组件封装的是逻辑而不是视觉呈现，它们的内部逻辑，通常会影响，作为这些组件children的组件是否展示，被传入额外参数等等逻辑。
