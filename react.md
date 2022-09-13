@@ -51,7 +51,8 @@ const element = <h1>Hello, {name}</h1>;
 
 >After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.``` React.createElement() ```
 this calls return a Object ,called ``` React Element ```,it like this 
-```javascript  {
+```javascript  
+{
   type: 'h1',
   props: {
     className: 'greeting',
