@@ -81,7 +81,7 @@ so, we can use jsx like other js expressions. because jsx is just js expression.
 ## 逻辑 
 React.createElement() 如其参数，关注：生成‘什么组件’，及要生成的’组件‘的’输入参数‘是什么。这个函数的主要参数就是组件名称，组件的props，此外还有这个组件的childrens（子组件数组）。
 
-React.createElement() 函数一般情况是又babel编译器将JSX语法的代码转译生成的。其返回值是ReactElement对象，就是普通的js对象。经过层层调用的React.createElement()函数的掉用，最终生成的ReactElement是一个树状结构，父组件->子组件们->孙组件们。这个树最终会作为参数给ReactDom.render()函数，这个函数会根据传入的组件树状结构定义生成浏览器中的DOM树。当组件状态改变时，也会自动更新DOM树。
+React.createElement() 函数一般情况是由babel编译器将JSX语法的代码转译生成的。其返回值是ReactElement对象，就是普通的js对象。经过层层调用的React.createElement()函数的掉用，最终生成的ReactElement是一个树状结构，父组件->子组件们->孙组件们。这个树最终会作为参数给ReactDom.render()函数，这个函数会根据传入的组件树状结构定义生成浏览器中的DOM树。当组件状态改变时，也会自动更新DOM树。
 ## 什么是组件
 刚接触React时，直觉上会认为一个React组件经过React渲染后，最终肯定会对应到页面中的某个显示出来的视觉元素。比如定义一个Button组件,用于定义一个按钮组件，当把这个Button在某个页面实例化之后，在页面中就可以看到这个按钮。
 
