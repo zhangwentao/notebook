@@ -8,4 +8,6 @@ A registry for JavaScript code
 + The CLI - for interact with registry, eg. borrow or share
 + The registry - a database for store all the javascript code package
 
-
+## what is NPM package
+A package is a file or directory that is described by a ```package.json``` file.
+A pacakge must contain a ```package.json``` file, for NPM registry and npm cli use
