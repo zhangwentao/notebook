@@ -11,3 +11,4 @@ A registry for JavaScript code
 ## what is NPM package
 A package is a file or directory that is described by a ```package.json``` file.
 A pacakge must contain a ```package.json``` file, for NPM registry and npm cli use
+A package can be scoped or unscroped to a user or organization.
