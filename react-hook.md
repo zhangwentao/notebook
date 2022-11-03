@@ -1,0 +1,2 @@
+# target
+sharing statefull logic
