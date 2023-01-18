@@ -20,3 +20,4 @@
 [vue-router](./vue-router.md)
 [vue](./vue.md)
 [vuex](./vuex.md)
+[javascript-namespace](./javascript-namespace.md)
