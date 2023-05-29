@@ -8,7 +8,7 @@
 
 ``` bash
 sudo apt-get update
-sudo ap-get upgrade
+sudo apt-get upgrade
 ```
 
 ``` bash

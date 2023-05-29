@@ -1,6 +1,10 @@
 SQL Basic Knowledge
 ===================
 
+SQL is a language, for defining the structures that hold data so we can organize relationships in the data.and extracting knowledge from data.
+
+
+
 # Table's Primary Key
 主键.
 

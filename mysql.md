@@ -36,3 +36,9 @@
     ```
 
 6. 
+
+# local run 
+To connect run:
+```
+    mysql -uroot
+```
