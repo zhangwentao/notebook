@@ -16,5 +16,9 @@
 
 ## Buffering
 
-Both Writable and Readable streams will store data in an internal buffer
+Both Writable and Readable streams will store data in an internal buffer.
+
+- Data is buffered in Readable streams **when the implementation calls `stream.push(chunk)`**.
+
+
 
