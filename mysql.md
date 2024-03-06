@@ -1,9 +1,34 @@
 # Basic Concepts
 
-+ user management
-    + privileges management
-+ database management
-+ table management
+## user management
+
++ create user
+    ```bash
+    CREATE USER 'username'@'hostname' IDENTIFIED BY 'password';
+    ```
++ privileges management
+    ```bash
+    GRANT [privilege1,previlige2,...] ON [database_name].* TO 'user_name'@'host_name';
+    ```
+    privilege types:
+    - select
+    - update
+    - insert
+    - delete
+## database management
+
++ create a database
+
+    ``` bash
+    create database [database_name];
+    ```
++ import data from dump file
+
+    ``` bash
+    mysql [database_name] < [dumpfile.sql];
+    ```
+
+## table management
 
 # Basic Operations
 
@@ -33,9 +58,8 @@
 5. list data row in one table;
     ``` bash
     select [*[column1[,column2]] from [table_name];
+ 
     ```
-
-6. 
 
 # local run 
 To connect run:
