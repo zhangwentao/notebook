@@ -10,4 +10,8 @@ nginx is
 
 ## basic HTTP server features
 
-+  
++ serving static and index files
+
+## other HTTP server features
+
++ name-based and IP-based virtual servers
