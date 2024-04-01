@@ -22,6 +22,11 @@
     ``` bash
     create database [database_name];
     ```
++ export database to a file
+
+    ```bash
+    mysqldump [database_name] > [file_name]
+    ```
 + import data from dump file
 
     ``` bash
@@ -64,5 +69,5 @@
 # local run 
 To connect run:
 ```
-    mysql -uroot
+    mysql -uroot -p
 ```
