@@ -11,3 +11,8 @@ bash 常用命令
     ```bash
     tail -f log_file_path
     ```
+3. macOS 清除DNS缓存
+
+    ```bash
+    sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+    ```
