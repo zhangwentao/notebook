@@ -91,4 +91,6 @@ React.createElement() 函数一般情况是由babel编译器将JSX语法的代�
 react组件的children 不一定是 组件，可以是任何表达式。
 
 ## key methods
-You can think of props like “knobs” that you can adjust. They serve the same role as arguments serve for functions—in fact, props are the *only argument* to your component! React component functions accept a single argument, a props object
++ You can think of props like “knobs” that you can adjust. They serve the same role as arguments serve for functions—in fact, props are the *only argument* to your component! React component functions accept a single argument, a props object
++ When you nest content inside a JSX tag, the parent component will receive that content in a prop called children.
+
