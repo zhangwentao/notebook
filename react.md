@@ -94,3 +94,6 @@ react组件的children 不一定是 组件，可以是任何表达式。
 + You can think of props like “knobs” that you can adjust. They serve the same role as arguments serve for functions—in fact, props are the *only argument* to your component! React component functions accept a single argument, a props object
 + When you nest content inside a JSX tag, the parent component will receive that content in a prop called children.
 + Note that your components won’t receive key as a prop. It’s only used as a hint by React itself. If your component needs an ID, you have to pass it as a separate prop: <Profile key={id} userId={id} />.
+
+# about hooks
++ Effects run at the end of a commit after the screen updates. This is a good time to synchronize the React components with some external system (like network or a third-party library).
