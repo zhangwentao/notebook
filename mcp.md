@@ -1,5 +1,6 @@
 MCP
 ===
+MCP is a stateful protocol
 
 ## 3 parts
 
@@ -32,19 +33,19 @@ Defines the communication mechanisms and channels that enable data exchange betw
 #### stdio transport
 
 #### Streamable HTTP transport
-
+use SSE
 
 
 
 ## related terms
 
 ### RPC
-a programming pattern or protocal that let calling remote  procedure be same as calling local procedure(function).
+a programming pattern or protocol that let calling remote  procedure be same as calling local procedure(function).
 this pattern hidden the client server connecting process and other operation detail, make it easy.
 
 ### JSON-RPC
 just like a business logic data structure in daily programming, it define RPC Requst's JSON structure, and Response Structure, also Error.
-only this is a common data structure for RPC, so it is a protocal. and this protocol can be extends.
+only this is a common data structure for RPC, so it is a protocol. and this protocol can be extends.
 
 ## refs
 [JSON-RPC](https://www.jsonrpc.org/specification)
