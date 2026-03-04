@@ -105,8 +105,7 @@ the global object is a regular JavaScript object.
 + there is no way to change (or “mutate”) a primitive value. 
 + Primitives are also compared by value: two values are the same only if they have the same value.
 + If two distinct string values are compared, JavaScript treats them as equal if, and only if, they have the same length and if the character at each index is the same.
-
-
++ Objects are sometimes called reference types to distinguish them from JavaScript’s primitive types. Using this terminology, object values are references, and we say that objects are compared by reference: two object values are the same if and only if they refer to the same underlying object.
 
 
 
