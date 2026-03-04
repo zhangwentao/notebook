@@ -69,12 +69,17 @@ javascript use semicolon to separate statements from one another.
     + Date 
     + Error
 
-  - *javaScript differs from more static languages in that functions and classes are not just part of the language syntax: they are themselves values that can be mannipulated by JavaScript program*. functions an classes are a specialized kind of object.
-  - **the javascript interpreter perform automatic garbage colleaction for memory management**
-    
-    When a value is no longer reachable—when a program no longer has any way to refer to it—the interpreter knows it can never be used again and automatically reclaims the memory it was occupying. (JavaScript programmers do sometimes need to take care to ensure that values do not inadvertently remain reachable—and
-therefore nonreclaimable—longer than necessary.
-   
+- *javaScript differs from more static languages in that functions and classes are not just part of the language syntax: they are themselves values that can be mannipulated by JavaScript program*. functions an classes are a specialized kind of object.
+- **the javascript interpreter perform automatic garbage colleaction for memory management**
+  
+    When a value is no longer reachable—when a program no longer has any way to refer to it—the interpreter knows it can never be used again and automatically reclaims the memory it was occupying. (JavaScript programmers do sometimes need to take care to ensure that values do not inadvertently remain reachable—and therefore nonreclaimable—longer than necessary.
+
+- In JavaScript, null and undefined are the only values that methods cannot be invoked on.
+- object types are nutable and primitive types are immutable.
+
+  - a value of a mutable type can change, can change the values of object properties an array elements.
+  - numbers,strings,booleans,symbols,null,undefined are immutable. you can access the text at any index of a string, but JavaScript provides no way to alter the text of an existing string
+- JavaScript liberally converts values from one type to another. If a program expects a string, for example, and you give it a number, it will automatically convert the number to a string for you.    
 
 
 
