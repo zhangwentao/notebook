@@ -101,6 +101,11 @@ the global object is a regular JavaScript object.
 + Web worker threads (§15.13) have a different global object than the Window with which they are associated. Code in a worker can refer to its global object as self.
 + ES2020 finally defines globalThis as the standard way to refer to the global object in any context. As of early 2020, this feature has been implemented by all modern browsers and by Node.
 
+### Immutable primitives Value and Mutable object References
++ there is no way to change (or “mutate”) a primitive value. 
++ Primitives are also compared by value: two values are the same only if they have the same value.
++ If two distinct string values are compared, JavaScript treats them as equal if, and only if, they have the same length and if the character at each index is the same.
+
 
 
 
