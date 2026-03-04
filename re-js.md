@@ -36,8 +36,47 @@ avaScript programs are written using the Unicode character set
 #### Unicode Normalization
 The string “é,” for example, can be encoded as the single Unicode character \u00E9 or as a regular ASCII “e” followed by the acute accent combining mark \u0301. 
 
-## optional semicolons
+#### optional semicolons
 javascript use semicolon to separate statements from one another.
++ you can usually omit the semicolon between two statements if those statements are written on separate lines.
++ You can also omit a semicolon at the end of a program or if the next token in the program is a closing curly brace: }
++ Many JavaScript programmers (and the code in this book) use semicolons to explicitly mark the ends of statements, even where they are not required. Another style is to omit semicolons whenever possible, using them only in the few situations that require them.
+
+## types, values, variables
++ The kinds of values that can be represented and manipulated in a programming language are known as types.
++ one of the most fundamental characteristics of a programming language is the set of types it supports.
++ When a program needs to retain a value for future use, it assigns the value to (or “stores” the value in) a variable. 
++ Variables have names, and they allow use of those names in our programs to refer to values. 
++ The way that variables work is another fundamental characteristic of any programming language. 
+
+### types
+#### two categories:
++ primitive types
+
+  - numbers,strings,booleans,symbols(es6 added)
+  - The special JavaScript values null and undefined are primitive values,Each value is typically considered to be the sole member of its own special type
+
++ object types
+  
+  - Any JavaScript value that is not a number, a string, a boolean, a symbol, null, or undefined is an object.
+  - an ordinary Javascript object is an unordered collection of named values.
+  - javascript also defines a special kind of object, known as an array.
+  - In addition to basic objects and arrays, JavaScript defines a number of other useful object types.
+
+    + Set object
+    + Map object
+    + RegExp 
+    + Date 
+    + Error
+
+  - *javaScript differs from more static languages in that functions and classes are not just part of the language syntax: they are themselves values that can be mannipulated by JavaScript program*. functions an classes are a specialized kind of object.
+  - **the javascript interpreter perform automatic garbage colleaction for memory management**
+    
+    When a value is no longer reachable—when a program no longer has any way to refer to it—the interpreter knows it can never be used again and automatically reclaims the memory it was occupying. (JavaScript programmers do sometimes need to take care to ensure that values do not inadvertently remain reachable—and
+therefore nonreclaimable—longer than necessary.
+   
+
+
 
 
 
