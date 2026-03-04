@@ -19,6 +19,31 @@ A literal is a data value that appears directly in a program.
 ### reserved words
 some words are part of JavaScript language that are reserved keywrods that must not be used as the names of constants,variables,functions,or classes(though they can all be used as the names of properties within an object).
 
+### unicode
+
+avaScript programs are written using the Unicode character set
++ can use any unicode character in strings and comments.
++ also can use be as identifier ,eg . variables, constants, functions ...
+
+#### unicode escape
+
++ reason: some computer hardware and software cannot display,input,or correctly process the full set of unicode characters.
++ to support pre reason, js defines escape sequences that allow us to write unicode characters using only ASCII characters.
++ begin with characters \u and followed by exactly four hexadecimal digits, \uffff e.g
++ this escapes appear in string literals,regular expression literals, identifiers(but not in language keywords).
++ The version with curly braces was introduced in ES6 to better support Unicode codepoints that require more than 16 bits, such as emoji: \u{1F600}
+
+#### Unicode Normalization
+The string “é,” for example, can be encoded as the single Unicode character \u00E9 or as a regular ASCII “e” followed by the acute accent combining mark \u0301. 
+
+## optional semicolons
+javascript use semicolon to separate statements from one another.
+
+
+
+
+
+
 
 ## var,let,const
 
