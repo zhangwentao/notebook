@@ -81,6 +81,13 @@ javascript use semicolon to separate statements from one another.
   - numbers,strings,booleans,symbols,null,undefined are immutable. you can access the text at any index of a string, but JavaScript provides no way to alter the text of an existing string
 - JavaScript liberally converts values from one type to another. If a program expects a string, for example, and you give it a number, it will automatically convert the number to a string for you.    
 
+### Numbers
+in JavaScript, type Number, is used to represent integers and approximate real numbers;
+
++ JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard.
+
+
+
 
 
 
