@@ -137,11 +137,84 @@ the global object is a regular JavaScript object.
 ## expression
 
 An expression is a phrase of JavaScript that can be evaluated to produce a value.
++ complex expressions are built from simpler expresssions.
++ the most common way to build a complex expression out of simpler expression is with an operator.
++ an operator combines the values of its operands in some way and ealuates to a new value.
 
+### primary expression
+The simplest expressions, known as primary expressions, are those that stand alone—they do not include any simpler expressions.
+Primary expressions in JavaScript are:
++ constant or literal values
++ certain language keywords
++ variable reference
+
+When any identifier appears by itself in a program, JavaScript assumes it is a variable or constant or property of the global object and looks up its value. If no variable with that name exists, an attempt to evaluate a nonexistent variable throws a ReferenceError instead.
+
+### Object and Array Initializers
+
+### Function Definition Expressions
++ normal function definition
++ arrow function definition
+
+### property access Expressions
+A property access expression evaluates to the value of an object property or an array element. JavaScript defines two syntaxes for property access:
+
++ expression . identifier
++ expression [ expression ] 
+
+#### conditional property access
++ expression ?. identifier
++ expression ?.[ expression ]
+
+### invocation Expression
+
++ function expression is evaluated first,
++ hen the argument expressions are evaluated to produce a list of argument values
++ If the value of the function expression is not a function, a TypeError is thrown. 
++ If that expression is a property
++ access expression, then the invocation is known as a method invocation. In method invocations, the object or array that is the subject of the property access becomes the value of the this keyword while the body of the function is being executed. 
+#### conditional invocation
++ With the new ?.() invocation syntax, if the expression to the left of the ?. evaluates to null or undefined, then the entire invocation expression evaluates to undefined and no exception is thrown.
+
+### Object Creation Expressions
+An object creation expression creates a new object and invokes a function (called a constructor) to initialize the properties of that object.  Object creation expressions are like invocation expressions except that they are prefixed with the keyword new
++ If no arguments are passed to the constructor function in an object creation expression, the empty pair of parentheses can be omitted
+
+
+## Operator Overview
+
+### Operator Side Effects
++ value assignment
++ function calling
+
+### === and ==
++ === more strict 
+
+### in
+The in operator expects a left-side operand that is a string, symbol, or value that can be converted to a string. It expects a right-side operand that is an object. It evaluates to true if the left-side value is the name of a property of the right-side object.
+
+### The instanceof Operator
+The instanceof operator expects a left-side operand that is an object and a right-side operand that identifies a class of objects
++ Note that all objects are instances of Object
++ instanceof considers the “superclasses” when deciding whether an object is an instance of a class. If the left-side operand of instanceof is not an object, instanceof returns false. If the righthand side is not a class of objects, it throws a TypeError
++ To evaluate the expression o instanceof f, JavaScript evaluates f.prototype, and then looks for that value in the prototype chain of o. If it finds it, then o is an instance of f (or of a subclass of f) and the operator returns true.  If f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f and instanceof returns false.
+
+### Assignment Expressions
+The = operator expects its left-side operand to be an lvalue: a variable or object property (or array element). It expects its right-side operand to be an arbitrary value of any type. The value of an assignment expression is the value of the right-side operand. As a side effect, the = operator assigns the value on the right to the variable or property on the left so that future references to the variable or property evaluate to the value.
+
+### Evaluation Expressions
 
 ## statements
 
 Expressions are evaluated to produce a value, but statements are executed to make something happen.
+
++ Expressions with side effects, such as assignments and function invocations, can stand alone as statements, and when used this way are known as expression statements.
+
++ JavaScript programs are nothing more than a sequence of statements to execute. By default, the JavaScript interpreter executes these statements one after another in the order they are written. Another way to “make something happen” is to alter this default order of execution, and JavaScript has a number of statements or control structures that do just this:
+
+  - Conditionals
+  - Loops
+  - Jump
 
 ## object
 
