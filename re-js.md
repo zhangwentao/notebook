@@ -217,7 +217,47 @@ Expressions are evaluated to produce a value, but statements are executed to mak
   - Jump
 
 ## object
+An object is a composite value
++ it aggregates multiple values (primitive values or other objects) 
++ allows you to store and retrieve those values by name.
++ object is an unordered collection of properties,each of which has a name and a value
++ Property names are usually strings (although, as we’ll see in §6.10.3, property names can also be Symbols),
++ people call it: objects map strings to values,hash,hashtable,dictionary,associative array.
++ *prototypal inheritance* a JavaScript object also inherits the properties of another object, known as its “prototype.”
++ **A property name may be any string, including the empty string (or any Symbol), but no object may have two properties with the same name.**
 
+### create object
++ object literal
++ new keyword
++ Object.create() function
+
+### prototypes
+almost every JavaScript object has a second JavaScript Object associated with it.This second object is known as prototype,and the first object inherits from the prototype.
++ all objects created by object literals have the some prototype object,we can refer to this prototype object in javascript code as `Object.prototype`
++ Remember: almost all objects have a prototype, but only a relatively small number of objects have a prototype property. It is these objects with prototype properties that define the prototypes for all the other objects.
++ `Object.prototype` is one of the rare objects that has no prototype:
++ Object.create() creates a new object, using its first argument as the prototype of that object
+
+
+### inheritance
++ object has it's 'own properties'
++ also inherit a set of properties from their prototype object. 
++ **query** uppose you query the property x in the object o. If o does not have an own property with that name, the prototype object of o is queried for the property x. If the prototype object does not have an own property by that name, but has a prototype itself, the query is performed on the prototype of the prototype. This continues until the property x is found or until an object with a null prototype is searched. As you can see, the prototype attribute of an object creates a chain or linked list from which properties are inherited
++ **set** Now suppose you assign to the property x of the object o. If o already has an own (non-inherited) property named x, then the assignment simply changes the value of this existing property. Otherwise, the assignment creates a new property named x on the object o. If o previously inherited the property x, that inherited property is now hidden by the newly created own property with the same name.  Property assignment examines the prototype chain only to determine whether the assignment is allowed. If o inherits a read-only property named x, for example, then the assignment is not allowed. 
++ The fact that inheritance occurs when querying properties but not when setting them is a key feature of JavaScript because it allows us to selectively override inherited properties:
+
+### delete
++ The delete operator only deletes own properties, not inherited ones.
+
+###  Serializing Objects
++ SON syntax is a subset of JavaScript syntax, and it cannot represent all JavaScript values. Objects, arrays, strings, finite numbers, true, false, and null are supported and can be serialized and restored.  NaN, Infinity, and -Infinity are serialized to null. Date objects are serialized to ISO-formatted date strings (see the Date.toJSON() function),
++ 
+
+# functions
+In JavaScript, functions are objects, and they can be manipulated by programs. JavaScript can assign functions to variables and pass them to other functions, for example. Since functions are objects, you can set properties on them and even invoke methods on them.
++ A function declaration actually declares a variable and assigns a function object to it
++ a function definition may include a list of identifiers, known as parameters, that work as local variables for the body of the function.
++ In addition to the arguments, each invocation has another value—the invocation context—that is the value of the this keyword.
 
 
 
