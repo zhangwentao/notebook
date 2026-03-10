@@ -259,7 +259,10 @@ In JavaScript, functions are objects, and they can be manipulated by programs. J
 + a function definition may include a list of identifiers, known as parameters, that work as local variables for the body of the function.
 + In addition to the arguments, each invocation has another value—the invocation context—that is the value of the this keyword.
 
-
++ The return statement causes the function to stop executing and to return the value of its expression (if any) to the caller
++ if the return statement does not have an associated expression, the return value of the function is undefined.
++ Prior to ES6, function declarations were only allowed at the top level
++ within a JavaScript file or within another function. While some implementations bent the rule, it was not technically legal to define functions inside the body of loops, conditionals, or other blocks. In the strict mode of ES6, however, function declarations are allowed within blocks. A function defined within a block only exists within that block, however, and is not visible outside the block
 
 
 ## todo
